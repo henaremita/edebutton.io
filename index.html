@@ -16,6 +16,9 @@
             background-color: #121212; /* Set background color to #121212 */
             margin: 0; /* Remove default margin */
             font-family: 'Oswald', sans-serif; /* Set the font to Oswald for the body */
+            overflow: hidden; /* Remove scrollbars */
+            transform: scale(0.7); /* Make everything 30% smaller */
+            transform-origin: top; /* Keep the top part of the page fixed when scaling */
         }
         #button-container {
             display: flex;
@@ -30,7 +33,7 @@
             font-weight: 700;
             text-transform: uppercase;
             padding: 10px 40px;
-            width: 600px; /* Adjust button width */
+            width: 900px; /* Adjust button width */
             border: none;
             border-radius: 5px;
             cursor: pointer;
