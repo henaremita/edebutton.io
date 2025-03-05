@@ -33,7 +33,7 @@
             font-weight: 700;
             text-transform: uppercase;
             padding: 10px 40px;
-            width: 900px; /* Adjust button width */
+            width: 600px; /* Adjust button width */
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -66,6 +66,7 @@
                     if (row[0] && row[1]) {
                         const button = document.createElement('a');
                         button.href = row[1];  // Link from column B
+                        button.target = '_blank';  // Open the link in a new tab
                         button.classList.add('custom-button');
                         button.textContent = row[0];  // Text from column A
                         buttonContainer.appendChild(button);
