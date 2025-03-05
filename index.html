@@ -5,27 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Buttons</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap'); /* Add the Oswald font import */
+        
         body {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #ffffff;
+            background-color: #121212; /* Set background color to #121212 */
+            margin: 0; /* Remove default margin */
+            font-family: 'Oswald', sans-serif; /* Set the font to Oswald for the body */
+        }
+        #button-container {
+            display: flex;
+            flex-direction: column; /* Stack buttons vertically */
+            justify-content: center;
+            align-items: center;
         }
         .custom-button {
             background-color: #7D4DFF;
             color: #F5A8FF;
             font-size: 48px;
-            font-family: 'Oswald', sans-serif;
             font-weight: 700;
             text-transform: uppercase;
             padding: 10px 40px;
-            width: 900px;
+            width: 600px; /* Adjust button width */
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            display: inline-block;
             text-align: center;
             margin: 10px 0;
             text-decoration: none;
